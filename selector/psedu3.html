@@ -8,13 +8,21 @@
       html {
         background-color: teal;
       }
-      h1::before {
+      h1:before {
         content: "before ";
         color: cornsilk;
       }
-      h1::after {
+      h1:after {
         content: "after";
         color: mediumpurple;
+      }
+      h3::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: cornsilk;
+        display: inline-block;
+        margin-right: 10px; /* 오른쪽에 여백주기 */
       }
     </style>
   </head>
