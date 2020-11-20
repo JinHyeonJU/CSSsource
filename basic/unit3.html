@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>unit3</title>
+    <style>
+      /* rem : root */
+      :root {
+        font-size: 13px;
+      }
+      /* em : body */
+      body {
+        font-size: 12px;
+      }
+      .box {
+        float: left; /* .box를 가로로 배치 */
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet; /*배경 색 */
+        color: white; /* 글자 색 */
+        text-align: center; /* 글자 중앙 */
+        margin-right: 10px; /* 박스 여백 띄우기 */
+      }
+      .box_px {
+        width: 160px;
+        height: 160px;
+      }
+      .box_em {
+        width: 10em; /* 16px x 10 */
+        height: 10em;
+      }
+      .box_rem {
+        width: 10rem; /* 16px x 10 */
+        height: 10rem;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <!--div. : class안에 문자 삽입
+        div# : id 안에 문자삽입-->
+    <h1>CSS 기본문법</h1>
+    <h2>길이</h2>
+    <div class="wrapper clearfix">
+      <div class="box box_px">PX</div>
+      <div class="box box_em">EM</div>
+      <div class="box box_rem">REM</div>
+    </div>
+  </body>
+</html>
