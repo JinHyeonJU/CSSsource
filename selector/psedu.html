@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>psedu.html</title>
+    <style>
+      a:link {
+        text-decoration: none;
+        color: teal;
+        outline: none; /* tab으로 이동시 테두리 x */
+      }
+      /* 마우스를 올리는 행위 */
+      a:hover {
+        color: orange;
+      }
+      /* 마우스를 누르는 행위 */
+      a:active {
+        background-color: red;
+        color: white;
+      }
+      a:visited {
+        color: silver;
+      }
+      h1:hover {
+        text-decoration: underline;
+      }
+      input {
+        width: 150px;
+        outline: none;
+        border: 1px solid lightslategray; /* 테두리 */
+        transition: 0.4s; /* 속도s : 애니메이션 효과 */
+        padding: 5px 10px;
+      }
+      /* input에 포커스가 가면 배경색 호출 */
+      input:focus {
+        width: 200px;
+        background-color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>기본문법</h1>
+    <h2>가상 클래스 선택자</h2>
+    <ul>
+      <li><a href="" target="_blank">11st</a></li>
+      <li><a href="" target="_blank">gmarket</a></li>
+      <li><a href="" target="_self">danawa</a></li>
+    </ul>
+    <a href="mailto:master@gmail.com">master@gmail.com</a>
+    <input type="text" autofocus placeholder="입력해주세요" />
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상요소선택자</title>
+    <style>
+      html {
+        background-color: teal;
+      }
+      h1::before {
+        content: "before ";
+        color: cornsilk;
+      }
+      h1::after {
+        content: "after";
+        color: mediumpurple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">CSS 기본문법</h1>
+    <h2>가상 요소 선택자</h2>
+    <h3>가상 요소 선택자 활용</h3>
+  </body>
+</html>
