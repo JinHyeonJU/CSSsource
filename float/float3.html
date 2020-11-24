@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: midnightblue;
+      }
+      .box {
+        background-color: #ddd;
+        /* height: 50px;*/
+        /* overflow: hidden; */
+      }
+      .left {
+        float: left; /*float는 자식으로 취급하지 않음.*/
+      }
+      .right {
+        float: right;
+      }
+      .clearfix {
+        /*float로 인한 요소선택 문제 해결 세션*/
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="../img/left-arrow.png" alt="" class="left" />
+      <img src="../img/right-arrow.png" alt="" class="right" />
+      <div class="clearfix">Awesome~~~~!</div>
+      <!-- <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+        molestias debitis? Earum praesentium, tempora ipsa aut amet repellat
+        voluptates, iure quo neque ut dolor pariatur totam aperiam aliquid quasi
+        error.
+      </p> -->
+    </div>
+  </body>
+</html>

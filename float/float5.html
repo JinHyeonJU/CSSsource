@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float1~4 복습</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        background-color: cadetblue;
+        /* overflow: hidden; */
+      }
+      .content div {
+        float: left;
+        margin-right: 10px;
+        border: 2px solid;
+      }
+      /* 사진 밑 부분공백 제거 */
+      img {
+        vertical-align: top;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>float 속성을 이용한 이미지 배치</h1>
+    <div class="content clearfix">
+      <div><img src="http://placehold.it/100" alt="" /></div>
+      <div><img src="http://placehold.it/100" alt="" /></div>
+      <div><img src="http://placehold.it/100" alt="" /></div>
+    </div>
+    <div>
+      <h2>float 속성 해지</h2>
+    </div>
+  </body>
+</html>

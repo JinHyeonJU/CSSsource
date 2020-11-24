@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우선순위</title>
+    <style>
+      .area p {
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+      #text {
+        color: brown !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 스타일 시트 우선순위
+        1.명시적으로 점수가 높은 선언이 우선
+        (!important > 인라인 선언 > 내부스타일시트 아이디선택자 >
+        클래스 선택자 > 태그 선택자 > 전체 >상속 )
+        2.점수가 같은 경우 가장 마지막에 해석되는 선언이 우선
+
+         
+      -->
+    <div class="area">
+      <p id="text" style="color: hotpink">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+        quidem cumque nam dignissimos sit? Consectetur ad fugit ratione repellat
+        error deserunt iure architecto maiores, quibusdam numquam corrupti
+        dignissimos iste animi?
+      </p>
+    </div>
+  </body>
+</html>
