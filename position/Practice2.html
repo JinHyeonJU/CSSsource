@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습2</title>
+    <style>
+      * {
+        text-decoration: none;
+      }
+      .food-slide {
+        margin: 0 auto;
+        width: 900px;
+        border: 2px solid black;
+        position: relative;
+        display: flex;
+        padding: 10px;
+      }
+      .food-slide img {
+        width: 300px;
+        height: 0 auto;
+        bottom: 0%;
+        left: 0;
+      }
+      p {
+        right: 0;
+        top: 0;
+      }
+      .controls a {
+        color: white;
+      }
+      .prev {
+        right: 100%;
+        position: absolute;
+        background: #94b18f;
+      }
+      .next {
+        left: 100%;
+        position: absolute;
+        background: #94b18f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="food-slide">
+      <img
+        src="https://t1.daumcdn.net/cfile/blog/9973A6505B6BE76313"
+        alt="cat"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+        doloribus vero! Explicabo suscipit deserunt quia, voluptatem rem eius
+        nihil. Corporis temporibus blanditiis quia commodi a illum fugit sequi
+        nihil aperiam.
+      </p>
+      <div class="controls">
+        <a href="#" class="prev">Previous Project</a>
+        <a href="#" class="next">Next Project</a>
+      </div>
+    </div>
+  </body>
+</html>

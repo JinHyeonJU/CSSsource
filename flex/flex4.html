@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>justify-content</title>
+    <style>
+      .container {
+        display: flex;
+        height: 500px;
+        margin: 20px auto;
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        flex-direction: row;
+        border: 1px solid;
+        /* space evenly: 사이에 일정 여백을 줌 */
+        justify-content: space-around;
+      }
+      .container div {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+      }
+      .container div:first-child {
+        background: red;
+      }
+      .container div:nth-child(2) {
+        background: blue;
+      }
+      .container div:last-child {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>flex-item</div>
+      <div>flex-item</div>
+      <div>flex-item</div>
+    </div>
+  </body>
+</html>

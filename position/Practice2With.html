@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습2</title>
+    <style>
+      .food-slide {
+        border: 2px solid #5b8955;
+        width: 800px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+      }
+      img {
+        height: 300px;
+        float: left; /* 왼쪽으로 아동 */
+      }
+      .controls a {
+        display: block; /* block : 행 진열 */
+        background: #94b18f;
+        line-height: 50px;
+        color: #eae9e2;
+        text-align: center;
+        position: absolute;
+        white-space: nowrap; /* 공백 기준으로 엔터 제거 */
+        top: calc(50% - 25px);
+        border: 1px solid black;
+        text-decoration: none;
+      }
+      .prev {
+        right: 100%;
+      }
+      .next {
+        left: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="food-slide">
+      <img
+        src="https://t1.daumcdn.net/cfile/blog/9973A6505B6BE76313"
+        alt="cat"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+        doloribus vero! Explicabo suscipit deserunt quia, voluptatem rem eius
+        nihil. Corporis temporibus blanditiis quia commodi a illum fugit sequi
+        nihil aperiam.
+      </p>
+      <div class="controls">
+        <a href="#" class="prev">Previous Project</a>
+        <a href="#" class="next">Next Project</a>
+      </div>
+    </div>
+  </body>
+</html>

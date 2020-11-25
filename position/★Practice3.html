@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 커서 올리면 메뉴 내려오는 헤더-->
+    <title>Header MenuBar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .mainmenu {
+        background-color: #333;
+        padding-left: 40px;
+        overflow: hidden;
+      }
+      /* .mainmenu ul : 서브 list */
+      .mainmenu ul {
+        background: #666;
+        display: none; /* 일단 안보이게 지정 */
+      }
+      .mainmenu > li {
+        float: left;
+        margin-right: 30px;
+        line-height: 35px; /* padding이랑 비슷 */
+        color: white;
+        cursor: pointer;
+      }
+      .mainmenu > li:hover ul {
+        display: block;
+        position: absolute; /* width 100%로 늘어난거 맞추기 */
+      }
+      .mainmenu > li ul li {
+        padding: 0 10px; /* 위아래 붙어잇는 간격 띄우기 */
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="mainmenu">
+      <li>
+        About us
+        <ul>
+          <li>ceo greeting</li>
+          <li>history</li>
+          <li>vision</li>
+        </ul>
+      </li>
+      <li>
+        Works
+        <ul>
+          <li>Design</li>
+          <li>Mobile</li>
+        </ul>
+      </li>
+      <li>Services</li>
+      <li>Location</li>
+    </ul>
+  </body>
+</html>

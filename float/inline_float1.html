@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인라인 블럭 vs float</title>
+    <style>
+      body {
+        background-color: #d7d2bd;
+      }
+      .grid {
+        width: 500px;
+        margin: 0;
+        background: white;
+        /* text-align: right; */
+        /* font-size: 0; */
+      }
+      .grid-item {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        float: left; /* 여백사라짐 */
+        vertical-align: top;
+      }
+      .grid-item.a {
+        background-color: #5b8955;
+      }
+      .grid-item.b {
+        background-color: #94b18f;
+      }
+      .grid-item.c {
+        background-color: #eae9e2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="grid-item a"></div>
+      <div class="grid-item b"></div>
+      <div class="grid-item c"></div>
+    </div>
+</html>

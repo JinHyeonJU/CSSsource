@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습</title>
+    <style>
+      * {
+        padding: 0;
+        margin-top: 0;
+      }
+      body {
+        font-family: "Open Sans";
+        background: #eae9e2;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+        border: 1px solid;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background-color: white;
+        width: 60%;
+        padding: 1.618rem;
+        order: 2;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 1.618rem;
+      }
+      .flexbg .left {
+        order: 1;
+        background: #94b18f;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: #d7d2bd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+          perspiciatis aut iusto, architecto consectetur veniam? Dolorum
+          voluptates, est ratione recusandae suscipit quod minus nam provident!
+          Voluptates libero pariatur perferendis excepturi. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Recusandae iure qui deserunt
+          tempore aliquid enim voluptatibus labore non. Iure, fugit libero.
+          Cupiditate facilis adipisci illo eum modi laudantium recusandae
+          provident.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+          perspiciatis aut iusto, architecto consectetur veniam? Dolorum
+          voluptates, est ratione recusandae suscipit quod minus nam provident!
+          Voluptates libero pariatur perferendis excepturi. Lorem, ipsum dolor
+          sit amet consectetur adipisicing elit. Dicta aliquam, deleniti
+          pariatur, eum accusamus dolor harum amet quaerat itaque nostrum nam
+          commodi? Magnam voluptatum distinctio cum soluta, maxime dolores vel.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsum!
+        </p>
+      </aside>
+      <aside class="sidebar right">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </aside>
+    </div>
+  </body>
+</html>

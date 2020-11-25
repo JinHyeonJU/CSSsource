@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습3 홈페이지</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        background-color: #94b18f;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #5b8955;
+        margin: 5px;
+      }
+      .container {
+        display: flex;
+      }
+      .main-content,
+      .sidebar {
+        background: #eae9e2;
+        margin: 10px;
+        padding: 6px;
+      }
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .panel {
+        background: white;
+        margin: 10px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main title</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus incidunt delectus enim minus omnis? Assumenda dicta
+            provident, velit sapiente quos, laudantium officiis atque, eos rem
+            possimus deleniti voluptas? Fuga, recusandae!
+          </p>
+          <img src="https://placehold.it/200" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+            ratione enim qui nihil aliquid vel iste aut temporibus voluptatum
+            maiores, consectetur ipsum amet quod commodi quo animi sunt quia
+            quae.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+            ratione enim qui nihil aliquid vel iste aut temporibus voluptatum
+            maiores, consectetur ipsum amet quod commodi quo animi sunt quia
+            quae.
+          </p>
+          <h3>SubTitle</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cumque
+            maxime natus minus tenetur consectetur, corrupti saepe maiores
+            optio! Sapiente magni id cupiditate enim minus impedit dolorem
+            corporis, blanditiis dolores.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            sapiente dicta, exercitationem iure fugit blanditiis ut doloremque,
+            recusandae soluta numquam nesciunt? Maiores, quasi voluptate dolores
+            laborum quas modi ipsa exercitationem.
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore id
+            laudantium dolorem aperiam, similique numquam corporis officiis
+            illum aspernatur rerum rem vel eos ipsa consectetur perspiciatis nam
+            mollitia. Soluta, reiciendis?
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>
+            recusandae soluta numquam nesciunt? laborum quas modi ipsa
+            exercitationem
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>
+            illum aspernatur rerum rem vel eos ipsa consectetur perspiciatis nam
+            mollitia. Soluta, reiciendis?
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

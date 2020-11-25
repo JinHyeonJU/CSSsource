@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>align-cotent</title>
+    <style>
+      .container {
+        display: flex;
+        background-origin: 2px solid;
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        flex-wrap: wrap;
+        height: 400px;
+        border: 1px solid;
+        /* flex-start : 공백 제거&맨앞으로 붙이기*/
+        /* center : 가운데로 정렬 */
+        /* space-between : 맨 위, 맨아래로 박스 붙이기*/
+        /* align-content : 박스가 두줄 시 효과적*/
+        align-content: space-around;
+      }
+      .container div {
+        width: 200px;
+        height: 100px;
+        border: 3px dashed;
+      }
+      .container div:first-child {
+        background: red;
+      }
+      .container div:nth-child(2) {
+        background: blue;
+      }
+      .container div:nth-child(3) {
+        background: green;
+      }
+      .container div:nth-child(4) {
+        background: magenta;
+      }
+      .container div:last-child {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>a</div>
+      <div>b</div>
+      <div>c</div>
+      <div>d</div>
+      <div>e</div>
+    </div>
+  </body>
+</html>

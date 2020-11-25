@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>absolute3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 500px;
+        height: 300px;
+        margin: 0 auto; /* 화면 가로 중앙 배치*/
+        background: #eae9e2;
+        position: relative; /* box 들이 container안으로 들어감 */
+      }
+      .box {
+        height: 100px;
+        /* width: 100px; */
+        position: absolute;
+      }
+      .box.a {
+        width: ;
+        background-color: red;
+        /* right: 500px; 기준이 되는 요소가 고정값 */
+        right: 100%; /* 기준이 되는 요소가 유동값 */
+        top: 100px;
+      }
+      .box.b {
+        background: #94b18f;
+        left: 200px;
+        top: 100px;
+      }
+      .box.c {
+        background: royalblue;
+        /* left: 500px; 기준이 되는 요소가 고정값 */
+        left: 100%; /* 기준이 되는 요소가 유동값*/
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box a">box aaaaa</div>
+      <div class="box b">box bb</div>
+      <div class="box c">box c</div>
+    </div>
+  </body>
+</html>

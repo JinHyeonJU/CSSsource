@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>absoulte</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        border: 1px solid;
+        position: absolute; /* 부모의 기준 위치.그리고 부모가 포지션을 갖고 있어야함*/
+        /* left: 100px;
+        top: 100px; */
+        right: 100px;
+        bottom: 100px;
+      }
+      img {
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <!--현재 box의 부모 : body-->
+    <div class="box"><img src="http://placehold.it/100x120" alt="" /></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore molestiae
+      dolor voluptatem. Eligendi eaque officiis ipsam dolor expedita itaque ex
+      omnis quod accusantium blanditiis illo eveniet enim neque, mollitia
+      doloremque.
+    </p>
+  </body>
+</html>

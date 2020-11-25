@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+      }
+      ul {
+        background: #333;
+        overflow: hidden;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        padding: 14px 16px;
+        display: inline-block; /* li에게 주어진 공간 전부 사용 */
+        color: #fff;
+      }
+      li a:hover {
+        background: blueviolet;
+      }
+      li a:active {
+        text-decoration: none;
+      }
+      li:first-child {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </body>
+</html>
